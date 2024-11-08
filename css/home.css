@@ -70,6 +70,7 @@ main {
 
 main aside {
     display: flex;
+    flex-flow: column wrap;
     flex: 1;
     align-items: center;
     background-color: #615e5e;
@@ -80,7 +81,6 @@ main aside {
 @media only screen and (max-width: 610px) 
 {
     main aside {
-        flex-flow: row wrap;
         justify-content: center;
         /* background-color: #221; */
         /* height: 30vh;     */
@@ -108,7 +108,6 @@ main aside {
 @media only screen and (min-width: 610px) {   
 
     main aside {
-        flex-flow: column wrap;
         justify-content: flex-start;
         /* background-color: #221; */
         height: 100vh;    
@@ -230,7 +229,7 @@ footer {
   }
   
   .me-img {
-    content:url('/img/dev.jpg');
+    /* content:url('/img/dev.jpg'); */
     width: 100%;
     max-width: 400px;
     height: auto;
