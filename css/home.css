@@ -68,25 +68,29 @@ main {
     align-items: start;
 }
 
+main aside {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #615e5e;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 610px) 
 {
     main aside {
-        display: flex;
-        flex-flow: column wrap;
-        flex: 1;
-        justify-content: flex-start;
-        align-items: center;
+        flex-flow: row wrap;
+        justify-content: center;
         /* background-color: #221; */
-        height: 30vh;    
-        background-color: #615e5e;
+        /* height: 30vh;     */
+        padding-bottom: 3vh;
     }
     
-    app-home-page {
+    .middle {
         flex: 3;
         display: flex;
-        flex-flow: column;
+        flex-flow: column wrap;
         padding-top: 3vh;
         /* height: 90vh; */
     }
@@ -104,21 +108,19 @@ main {
 @media only screen and (min-width: 610px) {   
 
     main aside {
-        display: flex;
         flex-flow: column wrap;
-        flex: 1;
         justify-content: flex-start;
-        align-items: center;
         /* background-color: #221; */
         height: 100vh;    
-        background-color: #615e5e;
     }
 
-    app-home-page {
+    .middle {
         flex: 3;
         display: flex;
         flex-flow: row wrap;
-        height: 90vh;
+        height: 97vh;
+        /* background-color: #f1f1f1; */
+        /* overflow-y: scroll; */
     }
 }
 
@@ -130,15 +132,6 @@ main {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { }
-
-.middle {
-    flex: 3;
-    display: flex;
-    flex-flow: row wrap;
-    height: 97vh;
-    background-color: #f1f1f1;
-    overflow-y: scroll;
-}
 
 main article {
     flex: 4;
