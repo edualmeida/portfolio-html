@@ -63,9 +63,9 @@ main {
     margin: 0;
     height: 87vh;
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: start;
+    flex-flow: row wrap;
 }
 
 main aside {
@@ -76,23 +76,21 @@ main aside {
     background-color: #615e5e;
 }
 
+.middle {
+    flex: 3;
+    display: flex;
+    flex-flow: row wrap;
+    /* overflow-y: scroll; */
+    padding-top: 3vh;
+    height: 97vh;
+    /* height: 90vh; */
+}
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 610px) 
 {
     main aside {
         justify-content: center;
-        /* background-color: #221; */
-        /* height: 30vh;     */
         padding-bottom: 3vh;
-    }
-    
-    .middle {
-        flex: 3;
-        display: flex;
-        flex-flow: column wrap;
-        padding-top: 3vh;
-        /* height: 90vh; */
     }
 
     .typewriter {
@@ -107,63 +105,55 @@ main aside {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 610px) {   
 
+    main {
+        flex-flow: row wrap;
+    }
+    
     main aside {
         justify-content: flex-start;
-        /* background-color: #221; */
         height: 100vh;    
-    }
-
-    .middle {
-        flex: 3;
-        display: flex;
-        flex-flow: row wrap;
-        height: 97vh;
-        /* background-color: #f1f1f1; */
-        /* overflow-y: scroll; */
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+.middle-top {
+    display: flex;
+    flex-flow: row wrap;
+}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) { }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) { }
+.middle-top > * {
+    flex: 1 1 400px;
+}
 
 main article {
     flex: 4;
 }
 
-.pc-side{
-    flex: 1;
-}
-
-.main-article-text {
-    flex: 1;
+.middle-top-article {
     display: flex;
     justify-content: center;
     align-items: center;
     margin:0 0 0 2rem;
 }
 
-.me-img-container {
-    flex: 1;
+.middle-top-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bottom-article {
-    flex: 1 100%;
+.middle-bottom {
+    /* flex: 1 100%; */
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     background-color: #f1f1f1;
 }
 
-.market_section {    
+.middle-bottom > p {
+    margin: 0.5em 5em 0 5em;
+}
+
+.middle-bottom-content {    
     background-color: #ffffff;
     height: auto;
     padding: 1rem 1rem;
@@ -179,10 +169,6 @@ main article {
     align-content: center;
 }
 
-.bottom-article > p {
-    margin: 0.5em 5em 0 5em;
-}
-
 footer {
     height: 10vh;
     color: white;
@@ -193,11 +179,11 @@ footer {
     flex: 1 100%;
 }
 
-.main-article-text h2 {
+.middle-top-article h2 {
     margin-bottom: 1em;
 }
 
-.main-article-text p {
+.middle-top-article p {
     margin-bottom: 1em;
 }
 
