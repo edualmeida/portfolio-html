@@ -5,15 +5,18 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 body {
     /* font-family: 'Open Sans', serif; */
     font-family: 'Josefin Sans', sans-serif;
     color: #535454;
+    height: 100%;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    background-color: #f1f1f1;
 }
 
 header {
@@ -61,11 +64,12 @@ header {
 
 main {
     margin: 0;
-    height: 87vh;
+    /* height: 87vh; */
     display: flex;
-    justify-content: flex-start;
-    align-items: start;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;    
 }
 
 main aside {
@@ -74,6 +78,8 @@ main aside {
     flex: 1;
     align-items: center;
     background-color: #615e5e;
+    padding-bottom: 3vh;
+    justify-content: flex-start;
 }
 
 .middle {
@@ -81,18 +87,14 @@ main aside {
     display: flex;
     flex-flow: row wrap;
     /* overflow-y: scroll; */
-    padding-top: 3vh;
-    height: 97vh;
+    padding-top: 4vh;
+    background-color: white;
+    /* height: 97vh; */
     /* height: 90vh; */
 }
 
 @media only screen and (max-width: 610px) 
 {
-    main aside {
-        justify-content: center;
-        padding-bottom: 3vh;
-    }
-
     .typewriter {
         display: none;
     }
@@ -102,22 +104,13 @@ main aside {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 610px) {   
-
-    main {
-        flex-flow: row wrap;
-    }
-    
-    main aside {
-        justify-content: flex-start;
-        height: 100vh;    
-    }
 }
 
 .middle-top {
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 4vh;
 }
 
 .middle-top > * {

@@ -6,17 +6,27 @@
   cursor: pointer;
 }
 
-.me-img {
-  content:url('/assets/img/dev.jpg');
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  justify-content: center;
-}
-
 .contact-link {
   text-decoration: none;
   color: black;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+.middle {
+  padding-top: 2vh;
+  background-color: #f1f1f1;
+}
+
+.middle-bottom {
+  flex: 1 100%;
+}
+
+.middle-bottom-content {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.middle-bottom-content h2 {
+  margin-bottom: 1rem;
 }
