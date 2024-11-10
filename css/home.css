@@ -125,7 +125,7 @@ main article {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0 0 0 2rem;
+    margin:0 0 0 1rem;
 }
 
 .middle-top-img {
@@ -207,10 +207,9 @@ footer {
     cursor: pointer;
   }
   
-  .me-img {
-    /* content:url('/img/dev.jpg'); */
+  .dev-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     justify-content: center;
   }
